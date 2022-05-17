@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'valorant';
+  buttonTitle:string = "Hide";
+  visible:boolean = true;
+  showhideUtility(){
+    this.visible = this.visible?false:true;
+    this.buttonTitle = this.visible?"Hide":"Show";
+  }
 }
